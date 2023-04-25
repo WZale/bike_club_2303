@@ -11,9 +11,10 @@ RSpec.describe Ride do
   end
 
   it "can initialize with readable attributes" do
-    expect(biker.name).to eq("Kenny")
-    expect(biker.max_distance).to eq(30)
-    expect(biker.rides).to eq({})
-    expect(biker.acceptable_terrain).to eq([])
+    expect(@biker.name).to eq("Kenny")
+    expect(@biker.max_distance).to eq(30)
+    expect(@biker.rides).to eq({})
+    expect(@biker.acceptable_terrain).to eq([])
   end
+
 end
