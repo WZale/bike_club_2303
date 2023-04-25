@@ -21,10 +21,16 @@ class Biker
         @rides[ride] = []
       end
       @rides[ride] << time
-      require 'pry'; binding.pry
     break
     end
   end
 
+  def personal_record(ride)
+    if @rides.include?(ride)
+      @rides[ride].min
+    else
+      false
+    end
+  end
 end
 
